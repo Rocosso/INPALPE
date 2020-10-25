@@ -1,11 +1,18 @@
 from Indice import *
 to=time()
 archivo='texto/productos.txt'
-n=1000
+
+#n=1000
+#n=10000
+#n=100000
+#n=1000000
+n=10000000
+#n=100000000
+
 p=inicializacion(archivo,n)
 tf=time()
 t=tf-to
-print(t,'milisegundos')
+print(t,'segundos para: ',n,'elemtos')
 
 
 archivo_texto=open("archivo.txt","a")
@@ -29,11 +36,13 @@ print("2.Actualizar:")
 print("3.Eliminar:")
 print("4.Consultar todo")
 print("5.Consulta por elemento")
-print("6.Salir")
+print("6.Ordenamiento")
+print("7.Almacenamiento")
+print("8.Salir")
 opc= input()
 op=int(opc)
-while ( op < 6):
-    if(op==1):
+while ( op < 8):
+    if(op==1):       
         print("Fecha de Vencimiento:")
         anio=int(input("Año:"))
         mes=int(input("Mes:"))
@@ -42,7 +51,8 @@ while ( op < 6):
         nombre=input("Nombre del producto:")
         cant=int(input("Cantidad:")) 
         to=time()
-        p.append(Producto(nombre,date.today(),fecha,cant))        
+        p.append(Producto(nombre,date.today(),fecha,cant))  
+            
         archivo_texto=open("archivo.txt","a")
         archivo_texto.write(p[len(p)-1].get_nombre())   
         archivo_texto.write(p[len(p)-1].get_fecha_r())
@@ -53,9 +63,10 @@ while ( op < 6):
         archivo_texto.write('\n')
         archivo_texto.write('\n')
         archivo_texto.close()
+        #tf=time()
         tf=time()
         t=tf-to
-        print(t,'milisegundos')
+        print(t,'segundos para: ',n,'elemtos')
     elif(op==2):
         nombre=input("Producto a modificar:")
         cantidad=input("Cantidad:")
@@ -70,7 +81,7 @@ while ( op < 6):
                 p[i].modificar(nombre,fecha,cantidad)
         tf=time()
         t=tf-to
-        print(t,'milisegundos')
+        print(t,'segundos para: ',n,'elemtos')
         
     elif(op==3):
         nombre=input("Producto a eliminar:")
@@ -81,7 +92,7 @@ while ( op < 6):
                 del p[i]
         tf=time()
         t=tf-to
-        print(t,'milisegundos')
+        print(t,'segundos para: ',n,'elemtos')
     elif(op==4):
         to=time()
         
@@ -89,7 +100,7 @@ while ( op < 6):
             p[i].mostrar_ele()
         tf=time()
         t=tf-to
-        print(t,'milisegundos')
+        print(t,'segundos para: ',n,'elemtos')
     elif(op==5):
         to=time()
         nombre=input("Busqueda por nombre/ingresar nombre:")
@@ -102,7 +113,16 @@ while ( op < 6):
             print("El producto que solicita no esta registrado")
         tf=time()
         t=tf-to
-        print(t,'milisegundos')
+        print(t,'segundos para: ',n,'elemtos')
+    elif(op==6):
+        to=time()
+        Ordenamiento(p)
+        tf=time()
+        t=tf-to
+        print(t,'segundos para: ',n,'elemtos')
+    elif(op==7):
+        print("No disponible en esta version, funcion en fase de diseño")
+    
     print("Inventario para alimentos perecederos")
     print("Opciones:")
     print("1.Añadir:")
@@ -110,7 +130,9 @@ while ( op < 6):
     print("3.Eliminar:")
     print("4.Consultar todo")
     print("5.Consulta por elemento")
-    print("6.Salir")
+    print("6.Ordenamiento")
+    print("7.Almacenamiento")
+    print("8.Salir")
     opc= input()
     op=int(opc)
         
