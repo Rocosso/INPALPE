@@ -1,6 +1,10 @@
 Este archivo solo indica la version que esta descargada en su Computador en este momento.
 
 
+la version que estoy subiendo es la 0.0.8
+
+se agrego la implementacion de una interfaz grafica simple usando PYQt5, PyQT-tools y QT-Designer
+
 la version que estoy subiendo es la 0.0.7
 
 se agrego la implementacion de una lista encadenada simple

@@ -1,0 +1,12 @@
+requerimientos de instalacion de la interfaz grafica.
+
+abrir en windows CMD y escribir:
+
+pip install PyQt5
+
+pip install PyQt5-tools
+
+pip install PyInstaller
+
+una vez descargados e instalados estos programas se descarga QT-Designer,
+se abre y se realiza la interfaz grafica empleando una ventana MAIN
