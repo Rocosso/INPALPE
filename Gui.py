@@ -1,7 +1,8 @@
 import sys
 from PyQt5 import uic
 from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel, QGridLayout, QWidget, QLineEdit, QPushButton
-from PyQt5.QtGui import QPixmap
+from PyQt5.QtGui import QPixmap, QIcon
+import ResoursesGUI_rc
 
 class Inpalpe_GUI(QMainWindow):
 
@@ -9,7 +10,7 @@ class Inpalpe_GUI(QMainWindow):
         super().__init__()
         uic.loadUi("INPALPE_Graficos.ui", self)
         self.setWindowTitle("INPALPE")
-        self.im = QPixmap("Logos_INPALPE/logo_INPALPE_azul.bmp")
+        
         self.Agregar.setEnabled(True)
         #self.NOMBRE_BOTON.clicked.connect(self.Fn_Activar) #conecta la funcion con el nombre del boton
         self.Agregar.clicked.connect(self.Fn_Activar_Agregar)
@@ -26,12 +27,12 @@ class Inpalpe_GUI(QMainWindow):
         self.Almacenar.clicked.connect(self.Fn_Activar_Almacenar)
         self.Buscar_elemento.clicked.connect(self.Fn_Activar_Consulta_Elemento)
         self.Salir.clicked.connect(self.Fn_Activar_Salir)
-
-
-        
+    
+       
     def Fn_Activar_Agregar(self):
         self.Agregar.setEnabled(True)
         self.Etiqueta.setText("Agregar")
+        
 
     def Fn_Activar_Actualizar(self):
         self.Actualizar.setEnabled(True)
@@ -64,10 +65,12 @@ class Inpalpe_GUI(QMainWindow):
     def onChanged(self, text):
         self.qlabel.setText(text)
         self.qlabel.adjustSize()
-        
+
+
+
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    GUI = Inpalpe_GUI()
-    GUI.show()
+    VentanaPrincipal = Inpalpe_GUI()
+    VentanaPrincipal.show()
     sys.exit(app.exec_())
     

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>590</width>
-    <height>460</height>
+    <width>609</width>
+    <height>573</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,27 +18,27 @@
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="Aceptar">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>390</y>
-      <width>131</width>
-      <height>51</height>
+      <x>510</x>
+      <y>220</y>
+      <width>81</width>
+      <height>251</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(160, 160, 200);</string>
+     <string notr="true">background-color: rgb(223, 226, 226);</string>
     </property>
     <property name="text">
-     <string>Aceptar</string>
+     <string>Iniciar</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>90</y>
+      <y>120</y>
       <width>211</width>
       <height>21</height>
      </rect>
@@ -49,18 +49,21 @@
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
+    <property name="buddy">
+     <cstring>Text_Nombre</cstring>
+    </property>
    </widget>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>160</y>
+      <y>190</y>
       <width>211</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>fecha de vencimiento (Año, mes, dia):</string>
+     <string>fecha de vencimiento:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -70,13 +73,13 @@
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>240</y>
+      <y>300</y>
       <width>211</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>fecha de cosecha       (Año, mes, dia):</string>
+     <string>fecha de cosecha:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -86,7 +89,7 @@
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>310</y>
+      <y>410</y>
       <width>211</width>
       <height>21</height>
      </rect>
@@ -97,15 +100,21 @@
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
     </property>
+    <property name="buddy">
+     <cstring>Text_Cantidad</cstring>
+    </property>
    </widget>
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>120</y>
+      <y>170</y>
       <width>151</width>
       <height>301</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;img src=&quot;:/LOGOS/BMP&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="title">
      <string>Seleccione una opción</string>
@@ -240,35 +249,10 @@ background-color: rgb(200, 200, 255);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_6">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>10</y>
-      <width>241</width>
-      <height>71</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">border-image: url(:/newPrefix/Logos_INPALPE/logo_INPALPE_azul.bmp);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="ResoursesGUI.qrc">:/newPrefix/Logos_INPALPE/logo_INPALPE_azul.bmp</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>340</x>
+      <x>400</x>
       <y>10</y>
       <width>211</width>
       <height>21</height>
@@ -280,7 +264,7 @@ background-color: rgb(200, 200, 255);</string>
      </font>
     </property>
     <property name="text">
-     <string>Activado:</string>
+     <string>Activo:</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -289,10 +273,10 @@ background-color: rgb(200, 200, 255);</string>
    <widget class="QLabel" name="Etiqueta">
     <property name="geometry">
      <rect>
-      <x>320</x>
+      <x>270</x>
       <y>30</y>
-      <width>211</width>
-      <height>41</height>
+      <width>331</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -308,14 +292,14 @@ background-color: rgb(200, 200, 255);</string>
      <string>Agregar</string>
     </property>
     <property name="alignment">
-     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
    <widget class="QTextEdit" name="Text_Nombre">
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>110</y>
+      <y>140</y>
       <width>361</width>
       <height>41</height>
      </rect>
@@ -328,7 +312,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>180</y>
+      <y>240</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -341,7 +325,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>180</y>
+      <y>240</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -354,7 +338,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>180</y>
+      <y>240</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -367,7 +351,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>300</x>
-      <y>260</y>
+      <y>340</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -380,7 +364,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>260</y>
+      <y>340</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -393,7 +377,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>260</y>
+      <y>340</y>
       <width>91</width>
       <height>41</height>
      </rect>
@@ -406,7 +390,7 @@ background-color: rgb(200, 200, 255);</string>
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>330</y>
+      <y>430</y>
       <width>291</width>
       <height>41</height>
      </rect>
@@ -415,11 +399,219 @@ background-color: rgb(200, 200, 255);</string>
      <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Año:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FC_anio</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mes:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FC_mes</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>320</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dia:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FC_dia</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dia:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FV_dia</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Año:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FV_Anio</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>220</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mes:</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_FV_mes</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>241</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/Logo/logoBMP&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/LOGOS/BMP);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="ResoursesGUI.qrc">:/Logo/Logo</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>530</y>
+      <width>431</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Desarrollado por Grupo3 Inpalpe para Estructuras de datos 2020-2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="buddy">
+     <cstring>Text_Cantidad</cstring>
+    </property>
+   </widget>
+   <zorder>Aceptar</zorder>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>label_2</zorder>
+   <zorder>Etiqueta</zorder>
+   <zorder>Text_Nombre</zorder>
+   <zorder>Text_FV_Anio</zorder>
+   <zorder>Text_FV_mes</zorder>
+   <zorder>Text_FV_dia</zorder>
+   <zorder>Text_FC_mes</zorder>
+   <zorder>Text_FC_dia</zorder>
+   <zorder>Text_FC_anio</zorder>
+   <zorder>Text_Cantidad</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_6</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>Agregar</tabstop>
+  <tabstop>Actualizar</tabstop>
+  <tabstop>Eliminar</tabstop>
+  <tabstop>Mostrar_Lista</tabstop>
+  <tabstop>Buscar_elemento</tabstop>
+  <tabstop>Ordenar</tabstop>
+  <tabstop>Almacenar</tabstop>
+  <tabstop>Text_Nombre</tabstop>
+  <tabstop>Text_FV_Anio</tabstop>
+  <tabstop>Text_FV_mes</tabstop>
+  <tabstop>Text_FV_dia</tabstop>
+  <tabstop>Text_FC_anio</tabstop>
+  <tabstop>Text_FC_mes</tabstop>
+  <tabstop>Text_FC_dia</tabstop>
+  <tabstop>Text_Cantidad</tabstop>
+  <tabstop>Aceptar</tabstop>
+  <tabstop>Salir</tabstop>
+ </tabstops>
  <resources>
   <include location="ResoursesGUI.qrc"/>
+  <include location="Imagenes.qrc"/>
  </resources>
  <connections/>
 </ui>

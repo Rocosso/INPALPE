@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="Logo">
+    <file alias="logoBMP">logo_INPALPE_azul.bmp</file>
+    <file alias="Logo">logo_INPALPE_azul.jpg</file>
+  </qresource>
+</RCC>

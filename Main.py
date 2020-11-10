@@ -29,7 +29,7 @@ archivo_texto.close()
 
 
 
-print("Inventario para alimentos perecederos")
+print("INPALPE  Inventario para alimentos perecederos")
 print("Opciones:")
 print("1.Añadir:")
 print("2.Actualizar:")
