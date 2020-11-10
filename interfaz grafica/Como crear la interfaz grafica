@@ -10,3 +10,15 @@ pip install PyInstaller
 
 una vez descargados e instalados estos programas se descarga QT-Designer,
 se abre y se realiza la interfaz grafica empleando una ventana MAIN
+
+
+al finalizar cada version y para crear el ejecutable se ejecuta el siguiente comando en CMD
+
+pyinstaller --clean --onefile --windowed [nombre gui].py
+
+en nuestro caso actual es:
+
+pyinstaller --clean --onefile --windowed Gui.py
+
+luego se va a crear una carpeta llamada Dist, en ella encontraremos el ejecutable 
+y hay que moverlo a la carpeta donde esta todo el codigo, un nivel arriba para poder abrir el ejecutable
