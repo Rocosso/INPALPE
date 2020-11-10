@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>Logos_INPALPE/logo_INPALPE_azul.bmp</file>
+  </qresource>
+</RCC>
